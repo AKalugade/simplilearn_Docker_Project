@@ -3,5 +3,4 @@ From tomcat:8-jre8
 
 # Maintainer 
 MAINTAINER "amrutaks@outlook.com" 
-COPY /var/lib/jenkins/workspace/demo/webapp/target/webapp.war /usr/local/tomcat/webapps
-
+COPY target/*.war /usr/local/tomcat/webapps/myweb.war
