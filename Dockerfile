@@ -1,9 +1,6 @@
-# Pull base image 
 From tomcat:8-jre8 
 
 # Maintainer 
-#MAINTAINER "amrutaks@outlook.com" 
-#COPY target/*.war /usr/local/tomcat/webapps/webapp.war
-#FROM tomcat:8
-COPY webapp.war /usr/local/tomcat/webapps/webapp.war
-WORKDIR /var/lib/jenkins/workspace/demo/webapp/target/
+MAINTAINER "amrutaks@outlook.com" 
+COPY ./webapp.war /usr/local/tomcat/webapps
+RUN touch /opt/nexus_demo.txt
