@@ -5,4 +5,5 @@
 #MAINTAINER "amrutaks@outlook.com" 
 #COPY target/*.war /usr/local/tomcat/webapps/webapp.war
 FROM tomcat:8
-COPY /var/lib/jenkins/workspace/demo/webapp/target/webapp.war /usr/local/tomcat/webapps/webapp.war
+COPY ./webapp.war /usr/local/tomcat/webapps/webapp.war
+WORKDIR /var/lib/jenkins/workspace/demo/webapp/target/
