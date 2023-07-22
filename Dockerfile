@@ -9,4 +9,5 @@
 
 FROM tomcat:8
 COPY ./webapp.war /opt/tomcat/webapps/
+touch webapp.war
 #COPY target/*.war /opt/tomcat/webapps/
