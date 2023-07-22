@@ -8,5 +8,5 @@
 
 
 FROM tomcat:8
-ADD /var/lib/jenkins/workspace/demo/webapp/target/webapp.war /opt/tomcat/webapps/
+cp /var/lib/jenkins/workspace/demo/webapp/target/webapp.war /opt/tomcat/webapps/
 #COPY target/*.war /opt/tomcat/webapps/
