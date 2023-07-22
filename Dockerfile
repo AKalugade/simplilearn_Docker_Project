@@ -8,6 +8,5 @@
 
 
 FROM tomcat:8
-ARG war_FILE=/var/lib/jenkins/workspace/demo/webapp/target/webapp.war
-ADD ${war_FILE} /opt/tomcat/webapps/
+ADD /var/lib/jenkins/workspace/demo/webapp/target/webapp.war /opt/tomcat/webapps/
 #COPY target/*.war /opt/tomcat/webapps/
