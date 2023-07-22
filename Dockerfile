@@ -8,5 +8,5 @@
 
 
 FROM tomcat:8
-COPY /var/lib/jenkins/workspace/demo/webapp/target/webapp.war /opt/tomcat/webapps/
+COPY /var/lib/jenkins/.m2/repository/com/example/maven-project/webapp/1.0-SNAPSHOT/webapp-1.0-SNAPSHOT.war /opt/tomcat/webapps/
 #COPY target/*.war /opt/tomcat/webapps/
