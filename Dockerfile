@@ -1,13 +1,7 @@
-#From tomcat:8-jre8 
+From tomcat:8-jre8 
 
 # Maintainer 
-#MAINTAINER "amrutaks@outlook.com" 
-#ARG war_FILE=/var/lib/jenkins/workspace/demo/webapp/target/*.war
-#COPY ${war_FILE} /opt/tomcat/webapps/
-#RUN touch /opt/nexus_demo.txt
-
-
-FROM tomcat:8
-#WORKDIR /var/lib/jenkins/workspace/demo/webapp/target/webapp.war
-COPY target/webapp.war /opt/tomcat/webapps/webapp.war
+MAINTAINER "amrutaks@outlook.com" 
+COPY ./webapp.war /opt/tomcat/webapps/
+RUN touch /opt/nexus_demo.txt
 #COPY target/*.war /opt/tomcat/webapps/
