@@ -9,5 +9,5 @@
 
 FROM tomcat:8
 #WORKDIR root/var/lib/jenkins/workspace/demo/webapp/target/
-COPY root/var/lib/jenkins/workspace/demo/webapp/target/webapp.war root/opt/tomcat/webapps/
+COPY ./var/lib/jenkins/workspace/demo/webapp/target/webapp.war root/opt/tomcat/webapps/
 #COPY target/*.war /opt/tomcat/webapps/
