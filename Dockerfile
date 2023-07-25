@@ -8,6 +8,6 @@
 
 
 FROM tomcat:8
-#WORKDIR root/var/lib/jenkins/workspace/demo/webapp/target/
-RUN cp -R var/lib/jenkins/workspace/demo/webapp/target/webapp.war root/opt/tomcat/webapps/
+WORKDIR var/lib/jenkins/workspace/demo/webapp/target/webapp.war
+COPY webapp.war root/opt/tomcat/webapps/
 #COPY target/*.war /opt/tomcat/webapps/
