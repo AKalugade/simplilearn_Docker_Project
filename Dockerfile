@@ -5,6 +5,7 @@ MAINTAINER "amrutaks@outlook.com"
 WORKDIR /var/lib/jenkins/workspace/New/webapp/target/
 RUN pwd
 RUN  pwd
+RUN ls
 #RUN cp webapp.war /opt/tomcat/webapps/
 #RUN touch /opt/nexus_demo.txt
 #COPY target/*.war /opt/tomcat/webapps/
