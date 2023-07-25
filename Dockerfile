@@ -4,6 +4,7 @@ From tomcat:8-jre8
 MAINTAINER "amrutaks@outlook.com" 
 WORKDIR /var/lib/jenkins/workspace/demo/webapp/target/
 RUN pwd
-RUN cp webapp.war /opt/tomcat/webapps/
+RUN  ls
+#RUN cp webapp.war /opt/tomcat/webapps/
 #RUN touch /opt/nexus_demo.txt
 #COPY target/*.war /opt/tomcat/webapps/
