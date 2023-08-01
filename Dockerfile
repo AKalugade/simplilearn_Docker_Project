@@ -4,5 +4,6 @@ From tomcat:8-jre8
 MAINTAINER "amrutaks@outlook.com" 
 RUN pwd
 WORKDIR /var/lib/jenkins/workspace/docker/webapp/target/
-RUN ls -1
+RUN file="$(ls -1 /var/lib/jenkins/workspace/docker/webapp/target)" && echo $file
+RUN echo $(ls -1 /var/lib/jenkins/workspace/docker/webapp/target)
 #COPY /webapp.war /opt/tomcat/webapps/
