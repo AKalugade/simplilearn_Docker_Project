@@ -5,5 +5,5 @@ MAINTAINER "amrutaks@outlook.com"
 RUN pwd
 WORKDIR /var/lib/jenkins/workspace/docker/webapp/target/
 RUN pwd
-RUN ls -1
+CMD ls -1
 #COPY /webapp.war /opt/tomcat/webapps/
