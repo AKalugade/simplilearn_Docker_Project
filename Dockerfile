@@ -4,4 +4,4 @@ From tomcat:8-jre8
 MAINTAINER "amrutaks@outlook.com" 
 WORKDIR /var/lib/jenkins/workspace/docker/webapp/target/
 #RUN touch /opt/nexus_demo.txt
-COPY webapp.war /opt/tomcat/webapps/
+COPY /webapp.war /opt/tomcat/webapps/
