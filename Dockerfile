@@ -5,4 +5,4 @@ From tomcat:8-jre8
 MAINTAINER "amrutaks@outlook.com"
 WORKDIR /var/lib/jenkins/workspace/docker/webapp/target/
 RUN pwd
-COPY target/*.war /usr/local/tomcat/webapps
+COPY webapp.war /usr/local/tomcat/webapps
