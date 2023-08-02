@@ -3,4 +3,4 @@ From tomcat:8
 
 # Maintainer 
 MAINTAINER "amrutaks@outlook.com"
-COPY target/webapp.war /usr/local/tomcat/webapps
+COPY /var/lib/jenkins/workspace/docker/webapp/target/webapp.war /usr/local/tomcat/webapps
