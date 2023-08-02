@@ -4,4 +4,3 @@ From tomcat:8-jre8
 # Maintainer 
 MAINTAINER "amrutaks@outlook.com" 
 COPY ./webapp.war /usr/local/tomcat/webapps
-RUN touch /opt/nexus_demo.txt
